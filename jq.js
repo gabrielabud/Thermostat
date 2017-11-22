@@ -1,30 +1,34 @@
 $(document).ready(function() {
-
   var thermostat = new Thermostat();
-  $("#temp").html(thermostat.temperature());
+
+  function getTemp() {
+  $("#temp").text(thermostat.temperature());
+  }
+
+  $("#temp").text(thermostat.temperature());
 
   $("#temp-up").on("click", function() {
-    $("#temp-up").html(thermostat.up());
-    $("#temp").html(thermostat.temperature());
+    thermostat.up();
+    getTemp()
 
   });
 
   $("#temp-down").on("click", function() {
-    $("#temp-down").html(thermostat.down());
-    $("#temp").html(thermostat.temperature());
+    thermostat.down();
+    getTemp()
 
   });
 
   $("#resetbt").on("click", function() {
     $("#resetbt").html(thermostat.reset());
-    $("#temp").html(thermostat.temperature());
+    getTemp()
 
   });
 
   $("#power").on("click", function(){
     $("#power").html(thermostat.modeSwitch());
     $("#power").css("background-color", "pink");
-    $("#temp").html(thermostat.temperature());
+    getTemp()
   });
 
 
