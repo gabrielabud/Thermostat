@@ -4,20 +4,37 @@
 
 <body>
   <h1> Thermostat 'Ame' </h1>
-  <div id="temperat">Temperature
+
+  <div > Temperature
     <span id="temp"></span>
   </div>
-</br>
+
+  </br>
+
   <div>
     <button id="temp-up" >+</button>
     <button id="temp-down">-</button>
     <button id="resetbt">RESET</button>
     <button id="power" >POWER SAVING MODE</button>
   </div>
+
+  </br>
+
+  <h1> Temperature outside: <span id="temperature-outside"></span></h1>
+
+  <select id="sel-city">
+    <option value="london">London</option>
+    <option value="bucharest">Bucharest</option>
+    <option value="athens">Athens</option>
+    <option value="lisbon">Lisbon</option>
+  </select>
+
   <script src='src/Thermostat.js'></script>
+
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+
   <script src='jq.js'></script>
 </body>
