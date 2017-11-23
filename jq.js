@@ -3,7 +3,8 @@ $(document).ready(function() {
 
   function getTemp() {
   $("#temp").text(thermostat.temperature());
-  }
+  $("#temp").attr('class', thermostat.energyUsage());
+  };
 
   $("#temp").text(thermostat.temperature());
 
@@ -30,6 +31,11 @@ $(document).ready(function() {
     $("#power").css("background-color", "pink");
     getTemp()
   });
+
+  function updateTemperature() {
+  $('#temperat').text(thermostat.temperature);
+  $('#temperat').attr('class', thermostat.energyUsage());
+}
 
 
 
