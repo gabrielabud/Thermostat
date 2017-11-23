@@ -22,12 +22,10 @@
 
   <h1> Temperature outside: <span id="temperature-outside"></span></h1>
 
-  <select id="sel-city">
-    <option value="london">London</option>
-    <option value="bucharest">Bucharest</option>
-    <option value="athens">Athens</option>
-    <option value="lisbon">Lisbon</option>
-  </select>
+  <form id="select-location">
+   <input id="sel-city" type="text" placeholder="Enter city"></input>
+   <input type="submit"></input>
+  </form>
 
   <script src='src/Thermostat.js'></script>
 
