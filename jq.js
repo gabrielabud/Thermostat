@@ -28,8 +28,9 @@ $(document).ready(function() {
 
   $("#power").on("click", function(){
     $("#power").html(thermostat.modeSwitch());
-    $("#power").css("background-color", "pink");
     getTemp()
+    $("#power").attr('class',('Power_'+thermostat.powerSavingOn()));
+
   });
 
   function updateTemperature() {

@@ -36,6 +36,9 @@ Thermostat.prototype.modeSwitch = function () {
   this._powerSaving = !this._powerSaving
   if (this._powerSaving) {
      this._maxTemperature = 25;
+     if(this._temperature >= this._maxTemperature) {
+       this._temperature = this._maxTemperature
+     }
   } else {
     this._maxTemperature = 32;
   };

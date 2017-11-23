@@ -18,3 +18,10 @@
  .high-usage {
   color: red;
   }
+
+  .power_true {
+    background-color: LightGreen;
+   }
+
+  .power_false {
+   }
