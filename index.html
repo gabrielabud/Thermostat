@@ -3,29 +3,31 @@
 </head>
 
 <body>
-  <h1> Thermostat 'Ame' </h1>
 
-  <div > Temperature
-    <span id="temp"></span>
-  </div>
+  <section class="tempy">
+    <h1> Thermostat 'Ame' </h1>
+    <div >
+      <span id="temp"></span> C
+    </div>
 
-  </br>
+    </br>
 
-  <div>
-    <button id="temp-up" >+</button>
-    <button id="temp-down">-</button>
-    <button id="resetbt">RESET</button>
-    <button id="power" >POWER SAVING MODE</button>
-  </div>
+    <div>
+      <button id="temp-up" >+</button>
+      <button id="temp-down">-</button>
+      <button id="resetbt">RESET</button>
+      <button id="power" >POWER SAVING MODE</button>
+    </div>
 
-  </br>
+    </br>
 
-  <h1> Temperature outside: <span id="temperature-outside"></span></h1>
+    <h1> Temperature outside: <span id="temperature-outside"></span></h1>
 
-  <form id="select-location">
-   <input id="sel-city" type="text" placeholder="Enter city"></input>
-   <input type="submit"></input>
-  </form>
+    <form id="select-location">
+     <input id="sel-city" type="text" placeholder="Enter city"></input>
+     <input type="submit"></input>
+    </form>
+  </section>
 
   <script src='src/Thermostat.js'></script>
 

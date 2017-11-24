@@ -1,10 +1,19 @@
 
-  body {
-    margin: 50px 300px 50px 300px;
+body {
+  font-family :Fjord One;
+  font-size: 16px;
+  margin: 100px auto 100px auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top:50px;
+  background-color: #d1d1e0;
+  max-width: 960px;
   }
+
   h1 {
     font-size: 20px;
     color: blue;
+    text-align: center;
   }
 
   .low-usage {
@@ -25,3 +34,10 @@
 
   .power_false {
    }
+
+  .tempy {
+    text-align: center;
+    border: 1px solid #80aaff;
+    background-color:  #80aaff;
+
+  }
